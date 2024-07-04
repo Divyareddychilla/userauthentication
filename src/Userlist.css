@@ -1,0 +1,167 @@
+
+
+.app_userlist {
+  background-color: grey;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.userlist-container {
+  background-color: white;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: black;
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  max-height: 80%;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.userlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.userlist-table th, .userlist-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.userlist-table th {
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  color: white;
+}
+
+.userlist-table th:nth-child(1) {
+  width: 60%;
+}
+
+.userlist-table th:nth-child(2),
+.userlist-table th:nth-child(3) {
+  width: 20%;
+}
+
+.edit-btn, .delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  color: lightblue;
+}
+
+.edit-btn:focus, .delete-btn:focus {
+  outline: none;
+}
+.save_button{
+  width: 105%;
+  padding: 10px;
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.cancel_button{
+  width: 105%;
+  padding: 10px;
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.userlist_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures vertical alignment if elements are of different heights */
+  width: 60%; /* Ensures the container takes the full width */
+ 
+}
+
+.mainheading_userlist {
+  font-size: 25px;
+  flex-grow: 1;
+  color: white; /* This makes the heading take up all available space to push the button to the right */
+}
+
+.profile_button_userlist {
+  padding: 8px;
+  border-radius: 5px;
+  height: 40px;
+  border: none;
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+.profile_link_userlist{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .userlist-container{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: black;
+  }
+  
+.userlist_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures vertical alignment if elements are of different heights */
+  width: 100%; /* Ensures the container takes the full width */
+ 
+}
+}
